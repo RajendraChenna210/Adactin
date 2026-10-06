@@ -6,7 +6,7 @@ export class global {
     }
     //Test data objects
     public url: string = "https://adactinhotelapp.com/";
-    public username: string = "Batch000062";
+    public username: string = "Batch000061";
     public password: string = "NRQ78K";
 
     //Objects / elements
