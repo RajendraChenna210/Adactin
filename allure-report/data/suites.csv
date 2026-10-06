@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","16918","TC001_LoginLogout","chromium","2026-10-06","passed","2026-10-06","","TC001.spec.ts","",""
+"","15575","TC001_LoginLogout","chromium","2026-10-06","passed","2026-10-06","Test Suite for 69Batch","TestSuite.spec.ts","",""
+"","1148","get started link","chromium","2026-10-06","passed","2026-10-06","","example.spec.ts","",""
+"","2693","has title","chromium","2026-10-06","passed","2026-10-06","","example.spec.ts","",""
+"","22597","TC002_NewRegister","chromium","2026-10-06","passed","2026-10-06","","TC002.spec.ts","",""
+"","21698","TC002_NewRegister","chromium","2026-10-06","passed","2026-10-06","Test Suite for 69Batch","TestSuite.spec.ts","",""

@@ -1,0 +1,4 @@
+Application opened
+Waited for 3 seconds
+Login Completed
+Waited for 3 seconds

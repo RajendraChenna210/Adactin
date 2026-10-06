@@ -1,0 +1,60 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TC001.spec.ts >> TC001_LoginLogout
+- Location: tests\TC001.spec.ts:5:5
+
+# Error details
+
+```
+Error: page.goto: Target page, context or browser has been closed
+Call log:
+  - navigating to "https://adactinhotelapp.com/", waiting until "load"
+
+```
+
+# Test source
+
+```ts
+  1  | import {global} from './Global';
+  2  | 
+  3  | export class general extends global {
+  4  |     //user defined functions
+  5  |     //open application
+  6  | public async openApplication() {
+> 7  |     await this.page.goto(this.url);
+     |                     ^ Error: page.goto: Target page, context or browser has been closed
+  8  |     console.log("Application opened");
+  9  | }
+  10 | public async login() {
+  11 |     await this.page.locator(this.textbox_username).fill(this.username);
+  12 |     await this.page.locator(this.textbox_password).fill(this.password);
+  13 |     await this.page.locator(this.button_login).click();
+  14 |     console.log("Login Completed");
+  15 | }
+  16 | 
+  17 | public async newregister() {
+  18 |     await this.page.locator(this.link_newregister).click();
+  19 |     console.log("New Register link clicked");
+  20 | 
+  21 | }
+  22 | public async backToLogin() {
+  23 |     await this.page.goBack();
+  24 |     console.log("Returned to Login page");
+  25 | }
+  26 | public async logout() {
+  27 |     await this.page.locator(this.link_Logout).click();
+  28 |     console.log("Logout Completed");
+  29 | }
+  30 | public async waitTime() {
+  31 |     await this.page.waitForTimeout(3000);
+  32 |     console.log("Waited for 3 seconds");
+  33 | }
+  34 | };
+  35 | 
+```

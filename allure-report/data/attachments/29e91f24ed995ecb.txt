@@ -1,0 +1,10 @@
+Application opened
+Waited for 3 seconds
+New Register link clicked
+Waited for 3 seconds
+Returned to Login page
+Waited for 3 seconds
+Login Completed
+Waited for 3 seconds
+Logout Completed
+Waited for 3 seconds
